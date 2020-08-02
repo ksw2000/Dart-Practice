@@ -1,6 +1,6 @@
 import 'dart:math';                         // Dart library (like #include<xxx.h> in C)
-import '../../lib/bubble.dart';             // URI (like #include "xxx.h" in C)
-import '../../lib/insert.dart' as insert;   // URI (like #include "xxx.h" in C)
+import '../lib/bubble.dart';                // URI (like #include "xxx.h" in C)
+import '../lib/insert.dart' as insert;      // URI (like #include "xxx.h" in C)
 
 // Specify a prefix for one or both libraries. Use the `as` keyword for specifing the prefix.
 // like python import ... as ...
