@@ -14,4 +14,9 @@ void main(){
         }
         break;
     }
+
+    // Conditional expressions
+    bool isEven;
+    isEven = num & 1 == 1 ? false : true;
+    print("$num is even? $isEven");
 }
