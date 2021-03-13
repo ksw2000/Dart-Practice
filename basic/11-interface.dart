@@ -7,22 +7,27 @@ void main(){
 }
 
 class Calc{
-    int area(a, [b]){}
+    double area(a, [b]){}
 }
 
-class Print{
-    void print(){}
+enum Colors{
+    red, blue, green
+}
+
+class Color{
+    Colors color;
 }
 
 class Rectangle implements Calc{
-    int area(a, [b]){
+    double area(a, [b]){
         return a*b;
     }
 }
 
 // like java, dart can implements multiple interface
-class Circle implements Calc, Print{
-    int area(a, b){
-        return
+class Oval implements Calc, Color{
+    Colors color;
+    double area(a, [b]){
+        return a*(b ?? a)*3.14;
     }
 }

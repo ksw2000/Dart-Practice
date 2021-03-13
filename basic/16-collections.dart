@@ -1,7 +1,7 @@
 import 'dart:collection';
 void main(){
     // Queue
-    Queue q = new Queue();
+    Queue q = Queue();
     q.addAll([100, 200, 300]);
     Iterator i = q.iterator;
     while(i.moveNext()){
@@ -13,11 +13,12 @@ void main(){
     // points to the objects in the collection
 
     // ------------ Set ------------
-    Set s = new Set();
-    s.add(100);
-    s.add(200);
-    s.add(300);
-    s.add(400);
+    Set s = Set();
+    s
+    ..add(100)
+    ..add(200)
+    ..add(300)
+    ..add(400);
     print("Default implementation: ${s.runtimeType}");
 
     // all elements are retrieved in the order in which they are inserted
@@ -25,7 +26,7 @@ void main(){
         print(n);
     }
 
-    Set s2 = new Set.from([12, 13, 14]);
+    Set s2 = Set.from([12, 13, 14]);
     print("Default implementation: ${s.runtimeType}");
 
     for(var n in s2){
@@ -33,17 +34,17 @@ void main(){
     }
 
     // ------------ HashMap ------------
-    var year = new HashMap();
+    var year = HashMap();
     year['golang'] = 2009;
     year['rust'] = 2010;
     year['kotlin'] = 2011;
-    print('Map after adding enties: ${year}');
+    print('Map after adding entries: ${year}');
     year.remove('golang');
-    print('Map after removing enties: ${year}');
+    print('Map after removing entries: ${year}');
 
     // ------------ HashSet ------------
     // A HashSet is an unordered hash-table based Set implementation.
-    HashSet h = new HashSet();
+    HashSet h = HashSet();
     h.add(100);
     h.add(110);
     h.add(120);
@@ -54,14 +55,14 @@ void main(){
         print(i);
     }
 
-    HashSet f = new HashSet();
+    HashSet f = HashSet();
     f.addAll([2010, 2011, 2012]);
     print("Default implementation: ${f.runtimeType}");
     for(var i in f){
         print(i);
     }
     f.remove(2010);
-    print("f: ${f}");
+    print("f: $f");
     f.clear();
-    print("f: ${f}");
+    print("f: $f");
 }

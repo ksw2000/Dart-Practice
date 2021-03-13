@@ -1,7 +1,7 @@
 void main(){
     int a = 10;
     // like python's print()
-    print("int a = " + a.toString());
+    print("int a = $a");
 
     // All variables in dart store a reference to the value rather than containing the value.
 
@@ -21,7 +21,7 @@ void main(){
     var b = 20;
     var c = '星星';
     print(b);
-    print("隱藏著${c}力量的鑰匙啊");
+    print("隱藏著$c力量的鑰匙啊");
 
     // dynamic
     dynamic d = 10;

@@ -43,8 +43,8 @@ class Student{
 }
 
 void main(){
-    Rectangle r1 = new Rectangle();
-    Rectangle r2 = new Rectangle.setSide(10, 2);
+    Rectangle r1 = Rectangle();
+    Rectangle r2 = Rectangle.setSide(10, 2);
 
     Student s1 = Student();
     s1.stud_name = '我妻由乃';    // setter

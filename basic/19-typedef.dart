@@ -1,19 +1,19 @@
 typedef ManyOperation(int a, int b);
 
 add(int a, int b){
-    print("${a} + ${b} = ${a+b}");
+    print("$a + $b = ${a+b}");
 }
 
 sub(int a, int b){
-    print("${a} - ${b} = ${a-b}");
+    print("$a - $b = ${a-b}");
 }
 
 mul(int a, int b){
-    print("${a} * ${b} = ${a*b}");
+    print("$a * $b = ${a*b}");
 }
 
 div(int a, int b){
-    print("${a} / ${b} = ${a/b}");
+    print("$a / $b = ${a/b}");
 }
 
 // like function pointer in C lang

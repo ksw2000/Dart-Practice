@@ -1,12 +1,12 @@
 import 'dart:collection';
 void main(){
-    List<String> logTypes = new List<String>();
+    List<String> logTypes = List<String>();
     logTypes.add("WARNING");
     logTypes.add("ERROR");
     logTypes.add("INFO");
     print("${logTypes}");
 
-    Queue<int> q = new Queue<int>();
+    Queue<int> q = Queue<int>();
     print("Default implementation ${q.runtimeType}");
     q.addLast(10);
     q.addLast(20);

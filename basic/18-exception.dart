@@ -1,6 +1,6 @@
 void test_age(int age){
     if(age < 0){
-        throw new FormatException();
+        throw FormatException();
     }
 }
 
@@ -11,7 +11,7 @@ class AmtException implements Exception{
 
 void withdraw_amt(int amt){
     if(amt <= 0){
-        throw new AmtException();
+        throw AmtException();
     }
 }
 
@@ -40,9 +40,9 @@ void main(){
     /*
         try{
 
-        } on Exption1 {
+        } on Exception1 {
 
-        } catch (Exption2) {
+        } catch (Exception2) {
 
         } finally {
 
@@ -52,12 +52,12 @@ void main(){
     try{
         test_age(-1);
     }catch(e){
-        print("${e}");
+        print(e);
     }
 
     try{
         withdraw_amt(-1);
     }catch(e){
-        print(e.errMsg());
+        print(e);
     }
 }

@@ -9,12 +9,12 @@ class Student{
 }
 
 void main(){
-    Student s = new Student();
+    Student s = Student();
     s.method1();
     s.method2();
 
     // equivalent to
-    new Student()
+    Student()
     ..method1()
     ..method2();
 }

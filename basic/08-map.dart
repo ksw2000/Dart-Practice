@@ -1,5 +1,5 @@
 void main(){
-    var first_publish = new Map();
+    var first_publish = {};
     first_publish['go'] = 2009;
     first_publish['rust'] = 2010;
     first_publish['kotlin'] = 2011;

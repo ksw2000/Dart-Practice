@@ -6,14 +6,14 @@ void main(){
     String str4 = """——
     封印解除！""";
 
-    // mutliline string
+    // multiline string
     // like python, coffeescript '''...''' """..."""
     // or golang, javascript ES6 `...`
 
     print(str1 + str2 + str3 + str4);
 
     // rune
-    // Dart represents strins as a sequence of Unicode UTF-16 code units
+    // Dart represents strings as a sequence of Unicode UTF-16 code units
     // Unicode is a format that defines a unique numeric value for each letter, digit, and symbol.
 
     // String.codeUnitAt()
