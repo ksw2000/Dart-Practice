@@ -1,33 +1,30 @@
-// Interface define a set of methods available on an object.
-// Dart does not have a syntax for declaring interfaces.
-// Class declarations are themselves interfaces in Dart.
+/*
+* https://medium.com/@manoelsrs/dart-extends-vs-implements-vs-with-b070f9637b36
+* Suppose you want to create your own Calc class, without inhering all
+* the properties, variables and functions of the Calc class, but you want
+* to inherit only the Calc type.
+* Use implement.
+* */
+
+class Vehicle{
+    Vehicle(this.color);
+    final String color;
+    final String definition = 'Vehicle';
+}
+
+class Car implements Vehicle{
+    Car(this.carColor);
+    final String carColor;
+
+    @override
+    String get color => carColor;
+
+    @override
+    String get definition => '$carColor Car';
+}
+
 void main(){
-    Rectangle a = new Rectangle();
-    print(a.area(4, 5));
-}
-
-class Calc{
-    double area(a, [b]){}
-}
-
-enum Colors{
-    red, blue, green
-}
-
-class Color{
-    Colors color;
-}
-
-class Rectangle implements Calc{
-    double area(a, [b]){
-        return a*b;
-    }
-}
-
-// like java, dart can implements multiple interface
-class Oval implements Calc, Color{
-    Colors color;
-    double area(a, [b]){
-        return a*(b ?? a)*3.14;
-    }
+    final car = Car('red');
+    print('Result: definition: ${car.definition}');
+    print('Result: is vehical type: ${car is Vehicle}');
 }
