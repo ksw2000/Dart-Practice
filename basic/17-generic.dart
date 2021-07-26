@@ -1,6 +1,6 @@
 import 'dart:collection';
 void main(){
-    List<String> logTypes = List<String>();
+    List<String> logTypes = [];
     logTypes.add("WARNING");
     logTypes.add("ERROR");
     logTypes.add("INFO");

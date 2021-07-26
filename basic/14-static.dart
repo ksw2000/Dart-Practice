@@ -3,7 +3,7 @@
 // program finishes execution. Static members are referenced by the class name
 
 class StaticMem{
-    static int num;
+    static int num = 0; // non nullable variable should be assigned value in advance
     static disp(){
         print("The value of num is ${StaticMem.num}");
     }
