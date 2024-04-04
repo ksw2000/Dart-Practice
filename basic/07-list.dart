@@ -1,15 +1,15 @@
-void main(){
-    var name = ['小櫻', '知世', '小狼'];
-    name.add('小可');
-    name.add('雪兔');
-    print(name);
+void main() {
+  var name = ['小櫻', '知世', '小狼'];
+  name.add('小可');
+  name.add('雪兔');
+  print(name);
 
-    name.forEach((element) {
-       print("$element, ");
-    });
+  name.forEach((element) {
+    print("$element, ");
+  });
 
-    // some list properties
-    /*
+  // some list properties
+  /*
         1.  first
             return the first element case.
         2.  isEmpty
@@ -25,28 +25,28 @@ void main(){
         7.  single
             checks if the list has only one element and return it
     */
-    print(".first ${name.first}");
-    print(".isEmpty ${name.isEmpty}");
-    print(".isNotEmpty ${name.isNotEmpty}");
-    print(".length ${name.length}");
-    print(".last ${name.last}");
-    print(".reversed ${name.reversed}");
+  print(".first ${name.first}");
+  print(".isEmpty ${name.isEmpty}");
+  print(".isNotEmpty ${name.isNotEmpty}");
+  print(".length ${name.length}");
+  print(".last ${name.last}");
+  print(".reversed ${name.reversed}");
 
-    /*
+  /*
         Dart 2.3 introduced the spread operator (...)
         and the null-aware spread operator (...?),
         which provide a concise way to
         insert multiple values into a collection.
     */
-    List group = ['小狼', '小櫻', '小可'];
-    List group2 = ['知世', '雪兔', ...group];
-    print(group2);
+  List group = ['小狼', '小櫻', '小可'];
+  List group2 = ['知世', '雪兔', ...group];
+  print(group2);
 
-    /*
+  /*
     * If the expression to the right of the spread operator might be null,
     * you can avoid exceptions by using a null-aware spread operator (...?):
     * */
-    var group3;
-    List group4 = ['知世', '雪兔', ...?group3];
-    print(group4);
+  var group3;
+  List group4 = ['知世', '雪兔', ...?group3];
+  print(group4);
 }

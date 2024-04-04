@@ -11,22 +11,21 @@
 
 // Note: Factory constructors have no access to this.
 
-class Logger{
+class Logger {
   final String id;
   static final Map<String, Logger> _cache = <String, Logger>{};
   // high level constructor
   // return cache if existed or create new instance
-  factory Logger(String id){
-    return _cache.putIfAbsent(id, ()=>Logger._internal(id));
+  factory Logger(String id) {
+    return _cache.putIfAbsent(id, () => Logger._internal(id));
   }
   Logger._internal(this.id); // real construct
 }
 
-void main(){
+void main() {
   var log1 = Logger('kashiwa');
   var log2 = Logger('kashiwa2');
   var log3 = Logger('kashiwa');
   print(identical(log1, log2)); // false
   print(identical(log1, log3)); // true
 }
-

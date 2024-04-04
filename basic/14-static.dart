@@ -2,14 +2,15 @@
 // i.e., fields and mehods. A static variable retains its values till the
 // program finishes execution. Static members are referenced by the class name
 
-class StaticMem{
-    static int num = 0; // non nullable variable should be assigned value in advance
-    static disp(){
-        print("The value of num is ${StaticMem.num}");
-    }
+class StaticMem {
+  static int num =
+      0; // non nullable variable should be assigned value in advance
+  static disp() {
+    print("The value of num is ${StaticMem.num}");
+  }
 }
 
-void main(){
-    StaticMem.num = 12;
-    StaticMem.disp();
+void main() {
+  StaticMem.num = 12;
+  StaticMem.disp();
 }
