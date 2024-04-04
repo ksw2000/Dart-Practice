@@ -6,25 +6,27 @@
 * Use implement.
 * */
 
-class Vehicle{
-    Vehicle(this.color);
-    final String color;
-    final String definition = 'Vehicle';
+class Vehicle {
+  Vehicle(this.color);
+
+  final String color;
+  final String definition = 'Vehicle';
 }
 
-class Car implements Vehicle{
-    Car(this.carColor);
-    final String carColor;
+class Car implements Vehicle {
+  Car(this.carColor);
 
-    @override
-    String get color => carColor;
+  final String carColor;
 
-    @override
-    String get definition => '$carColor Car';
+  @override
+  String get color => carColor;
+
+  @override
+  String get definition => '$carColor Car';
 }
 
-void main(){
-    final car = Car('red');
-    print('Result: definition: ${car.definition}');
-    print('Result: is vehical type: ${car is Vehicle}');
+void main() {
+  final car = Car('red');
+  print('Result: definition: ${car.definition}');
+  print('Result: is vehicle type: ${car is Vehicle}');
 }
