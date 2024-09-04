@@ -1,27 +1,21 @@
 void main() {
-  int a = 10;
-  // like python's print()
-  print("int a = $a");
-
+  var a = 10;
+  print("a = $a");
   // All variables in dart store a reference to the value rather than containing the value.
-
   /*
-        https://stackoverflow.com/questions/12416507/difference-between-var-and-dynamic-type-in-dart
+      https://stackoverflow.com/questions/12416507/difference-between-var-and-dynamic-type-in-dart
 
-        `dynamic`
-        is a type underlying all Dart objects.You shouldn't need to explicitly use it in most cases.
+      `dynamic`
+      is a type underlying all Dart objects.You shouldn't need to explicitly use it in most cases.
 
-        `var`
-        is a keyword, meaning "I don't care to notate what the type is here."
-        Dart will replace the var keyword with the initializer type,
-        or leaving it dynamic by default if there is no initializer.
-    */
+      `var`
+      is a keyword, meaning "I don't care to notate what the type is here."
+      Dart will replace the var keyword with the initializer type,
+      or leaving it dynamic by default if there is no initializer.
+  */
 
-  // var
-  var b = 20;
   var c = '星星';
-  print(b);
-  print("隱藏著$c力量的鑰匙啊");
+  print("隱藏著$c力量的鑰匙啊"); // 隱藏著星星力量的鑰匙啊
 
   // dynamic
   dynamic d = 10;
@@ -40,4 +34,13 @@ void main() {
 
   final h = 6.63e-34;
   print(h);
+
+  int x = 10;
+  print(x / 3); // 3.3333333333333335
+  print(x ~/ 3); // 3
+
+  // num can be `int` or `double`
+  num y = 10;
+  y = 1.3;
+  print(y);
 }
