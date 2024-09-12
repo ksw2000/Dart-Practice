@@ -4,8 +4,16 @@ void main() {
   name.add('雪兔');
   print(name);
 
-  name.forEach((element) {
-    print("$element, ");
+  for (int i = 0; i < name.length; i++) {
+    print(name[i]);
+  }
+
+  for (var n in name) {
+    print(n);
+  }
+
+  name.forEach((n) {
+    print(n);
   });
 
   // some list properties
@@ -38,7 +46,7 @@ void main() {
         which provide a concise way to
         insert multiple values into a collection.
     */
-  List group = ['小狼', '小櫻', '小可'];
+  List<String> group = ['小狼', '小櫻', '小可'];
   List group2 = ['知世', '雪兔', ...group];
   print(group2);
 
@@ -46,7 +54,10 @@ void main() {
     * If the expression to the right of the spread operator might be null,
     * you can avoid exceptions by using a null-aware spread operator (...?):
     * */
-  var group3;
+  List? group3;
   List group4 = ['知世', '雪兔', ...?group3];
   print(group4);
+
+  group3!.add(10);
+  print(group3);
 }

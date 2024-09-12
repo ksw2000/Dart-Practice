@@ -15,6 +15,17 @@ void main() {
   };
   print(first_publish2);
 
+  var first_publish3 = <String, int>{};
+  Map<String, int> first_publish4 = {};
+
+  print(first_publish3);
+  print(first_publish4);
+
+  List<String> name2 = [];
+  List name3 = <String>[];
+  print(name2);
+  print(name3);
+
   // some map properties
   /*
         1.  keys
@@ -47,7 +58,6 @@ void main() {
             Applies `f` to each key-value pair of the map.
     */
   var other_first_publish = {
-    'assembly': 1949,
     'c': 1972,
     'c++': 1983,
     'python': 1991,
@@ -56,11 +66,18 @@ void main() {
     'javascript': 1996
   };
 
-  first_publish.addAll(other_first_publish);
-  print(first_publish);
+  first_publish2.addAll(other_first_publish);
+  print(first_publish2);
 
-  first_publish.remove('php');
-  print(first_publish);
+  first_publish2.remove('php');
+  print(first_publish2);
 
-  first_publish.forEach((k, v) => print("${k} : ${v}"));
+  first_publish2.forEach((k, v) => print("$k -> $v"));
+  first_publish2.forEach((k, v) {
+    print("$k -> $v");
+  });
+
+  int? a;
+  // a = "abc";
+  print(a);
 }

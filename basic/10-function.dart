@@ -1,4 +1,4 @@
-//Optional Parameters
+// Optional Parameters
 // if an optional parameter is not passed a value, it is set to null
 void optional_parameters(p1, [p2, p3]) {
   print(p1);
